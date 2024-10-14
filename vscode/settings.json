@@ -1,0 +1,124 @@
+{
+    "telemetry.telemetryLevel": "off",
+    /** ------------ Workbench Settings ------------ **/
+    "workbench.colorCustomizations": {
+        "inlineparameters.annotationBackground": "#282A3600",
+        "inlineparameters.annotationForeground": "#7b82af",
+        "scrollbar.shadow": "#24292e00"
+    },
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.editorLargeFileConfirmation": 10024,
+    "workbench.tree.indent": 15,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.tips.enabled": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    /** ------------ Breadcrumbs Configurations ------------ **/
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.filePath": "on",
+    /** ------------ Editor Settings ------------ **/
+    "editor.fontFamily": "JetBrains Mono, Fira Code, Monospace",
+    "editor.suggestFontSize": 15,
+    "editor.suggestLineHeight": 15,
+    "editor.formatOnSave": true,
+    "editor.folding": true,
+    "editor.snippetSuggestions": "top",
+    "editor.glyphMargin": true,
+    "editor.guides.indentation": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.cursorStyle": "line",
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.stickyScroll.enabled": false,
+    "editor.padding.top": 15,
+    /** ------------ Files Settings ------------ **/
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    /* ------------ Git Configurations ------------ **/
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    /** ------------ Window Settings ------------ **/
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+    /** ------------ Terminal Configurations ------------ **/
+    "terminal.integrated.fontFamily": "MesloLGS NF, FiraCode Nerd Font Mono, Monospace",
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.lineHeight": 1,
+    /** ------------ Language Configurations ------------ **/
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": true
+    },
+    "[tailwindcss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features",
+        "editor.formatOnSave": true
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": true
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.formatOnSave": true
+    },
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+        "editor.formatOnSave": true
+    },
+    /** ------------ Additional Configurations ------------ **/
+    "vscode_custom_css.imports": [
+        "file:///home/alvin/.vscode/custom/style.css",
+        "file:///home/alvin/.vscode/custom/script.js"
+    ],
+    "search.exclude": {
+        "**/vendor": true,
+        "**/vendor/laravel": false,
+        "**/vendor/livewire": false,
+        "**/public": true,
+        "**/public/index.php": false,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/_ide_helper.php": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true,
+        "storage": true,
+        ".phpunit.result.cache": true,
+        "**/.vscode": true,
+        "**/.git": true,
+        "**/tests": true
+    }
+}

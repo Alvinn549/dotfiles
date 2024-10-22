@@ -1,0 +1,16 @@
+# set background lock
+set $lock_bg ~/.config/backgrounds/wallhaven-zyj28v_3440x1440.png
+
+# authorize polkit-gnome
+exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
+# notifications
+exec swaync
+
+# start picom
+#exec swayidle -w \
+#         timeout 600 'swaylock --hide-keyboard-layout --clock --indicator --screenshots --effect-scale 0.4 --effect-vignette 0.2:0.5 --effect-blur 4x2 --datestr "%a %e.%m.%Y" --timestr "%k:%M" -f -c 000000 -i $lock_bg' \
+#         timeout 1800 'swaymsg "output * power off"' \
+#        resume 'swaymsg "output * power on"' \
+#         after-resume 'swaymsg "output * enable"' \
+#         before-sleep 'swaylock --hide-keyboard-layout --clock --indicator --screenshots --effect-scale 0.4 --effect-vignette 0.2:0.5 --effect-blur 4x2 --datestr "%a %e.%m.%Y" --timestr "%k:%M" -f -c 000000 -i $lock_bg'

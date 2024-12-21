@@ -6,30 +6,25 @@ FULLSCREEN_DIR="$DIR/Fullscreen-Screenshots"
 
 mkdir -p "$AREA_DIR" "$FULLSCREEN_DIR"
 
-get_next_number() {
-  local dir="$1"
-  local prefix="$2"
-  local num=1
-  while [[ -f "$dir/${prefix}${num}.png" ]]; do
-    ((num++))
-  done
-  echo "$num"
-}
+timestamp=$(date +"%Y%m%d%H%M%S%N")
 
 case "$1" in
   --area)
-    PREFIX="area_screenshot_"
-    FILE="$AREA_DIR/${PREFIX}$(get_next_number "$AREA_DIR" "$PREFIX").png"
+    FILE="$AREA_DIR/area-$timestamp.png"
     grim -g "$(slurp)" "$FILE"
     ;;
   --fullscreen)
-    PREFIX="fullscreen_screenshot_"
-    FILE="$FULLSCREEN_DIR/${PREFIX}$(get_next_number "$FULLSCREEN_DIR" "$PREFIX").png"
+    FILE="$FULLSCREEN_DIR/full-$timestamp.png"
     grim "$FILE"
     ;;
   *)
+    echo "Usage: $0 [--area | --fullscreen]"
     exit 1
     ;;
 esac
 
-notify-send -i "$HOME/.config/swaync/icons/screenshot.png" "Screenshot Saved" "File: $(basename "$FILE")" > /dev/null 2>&1
+if [[ -f "$FILE" ]]; then
+  notify-send -i "$HOME/.config/swaync/icons/screenshot.png" "Screenshot Saved" "File: $(basename "$FILE")" > /dev/null 2>&1
+else
+  notify-send -u critical "Screenshot Failed" "File not created"
+fi

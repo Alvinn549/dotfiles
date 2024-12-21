@@ -1,0 +1,79 @@
+SWAY KEY BINDINGS
+
+Basics:
+
+Super + t --- Open Terminal
+
+Super + Shift + q --- Close Window
+
+Super + Space --- Application Launcher
+
+Super + Shift + r --- Reload Configuration
+
+Super + Shift + e --- Exit Sway
+
+Super + l + k --- Lock Screen
+
+Super + n --- Open Notification Center
+
+Applications:
+
+Super + c --- Open Visual Studio Code
+
+Super + f --- Open Thunar (File Manager)
+
+Super + b --- Open Google Chrome
+
+Moving Around:
+
+Super + Arrow Keys --- Change Focus (Directional)
+
+Super + Shift + Arrow Keys --- Move Focused Window (Directional)
+
+Workspaces:
+
+Super + (1-10) --- Switch to Workspace (1-10)
+
+Super + Shift + (1-10) --- Move Focused Window to Workspace (1-10)
+
+Resizing Windows:
+
+Super + Ctrl + Left --- Shrink Width
+
+Super + Ctrl + Right --- Grow Width
+
+Brightness:
+
+Brightness Down --- Decrease Brightness (5%)
+
+Brightness Up --- Increase Brightness (5%)
+
+Audio Controls:
+
+Volume Down --- Lower Volume
+
+Volume Up --- Increase Volume
+
+Mute --- Toggle Mute
+
+Mic Mute --- Toggle Microphone Mute
+
+Screenshots:
+
+Print --- Fullscreen Screenshot
+
+Super + s --- Fullscreen Screenshot (Alternative)
+
+Control + Print --- Area Screenshot
+
+Super + Shift + s --- Area Screenshot (Alternative)
+
+Layouts and Tiling:
+
+Super + Shift + Return --- Toggle Floating Mode
+
+Super + Return --- Swap Focus Between Tiling and Floating Mode
+
+Super + a --- Move Focus to Parent Container
+
+Super + Shift + f --- Toggle Fullscreen

@@ -21,9 +21,10 @@
     "breadcrumbs.symbolPath": "off",
     "breadcrumbs.filePath": "on",
     /** ------------ Editor Settings ------------ **/
-    "editor.fontFamily": "JetBrains Mono, Fira Code, Monospace",
-    "editor.suggestFontSize": 15,
-    "editor.suggestLineHeight": 15,
+    "editor.fontFamily": "JetBrainsMono Nerd Font, FiraCode Nerd Font, Monospace",
+    "editor.fontSize": 13.5,
+    "editor.suggestFontSize": 14,
+    "editor.suggestLineHeight": 14,
     "editor.formatOnSave": true,
     "editor.folding": true,
     "editor.snippetSuggestions": "top",
@@ -63,14 +64,6 @@
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.formatOnSave": true
     },
-    "[tailwindcss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
-    "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
     "[javascriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.formatOnSave": true
@@ -100,25 +93,21 @@
         "editor.formatOnSave": true
     },
     /** ------------ Additional Configurations ------------ **/
-    "vscode_custom_css.imports": [
-        "file:///home/alvin/.vscode/custom/style.css",
-        "file:///home/alvin/.vscode/custom/script.js"
-    ],
     "search.exclude": {
         "**/vendor": true,
-        "**/vendor/laravel": false,
-        "**/vendor/livewire": false,
-        "**/public": true,
-        "**/public/index.php": false,
         "**/node_modules": true,
+        "**/storage/**": true,
+        "**/.git/**": true,
         "**/dist": true,
-        "**/_ide_helper.php": true,
+        "**/.phpunit.result.cache": true,
         "**/composer.lock": true,
-        "**/package-lock.json": true,
-        "storage": true,
-        ".phpunit.result.cache": true,
-        "**/.vscode": true,
-        "**/.git": true,
-        "**/tests": true
-    }
+        "**/package-lock.json": true
+    },
+    "files.watcherExclude": {
+        "**/vendor/**": true,
+        "**/node_modules/**": true,
+        "**/storage/**": true
+    },
+    "editor.linkedEditing": true,
+    "git.ignoreRebaseWarning": true,
 }

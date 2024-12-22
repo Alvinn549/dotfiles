@@ -5,7 +5,7 @@ CONFIG_DIR="$HOME/.config"
 REPO_DIR="$HOME/Projects/dotfiles/.config"
 
 # Directories to sync
-DIRECTORIES=("sway" "waybar" "alacritty" "neefetch" "qt5ct" "scripts" "swaync" "wlogout" "wofi")
+DIRECTORIES=("sway" "waybar" "alacritty" "neofetch" "qt5ct" "scripts" "swaync" "wlogout" "wofi")
 
 sync_directory() {
   local source_dir="$CONFIG_DIR/$1"
@@ -26,5 +26,18 @@ echo "Starting config sync..."
 for dir in "${DIRECTORIES[@]}"; do
   sync_directory "$dir"
 done
+
+# Paths
+SOURCE_FILE="$HOME/.config/Code/User/settings.json"
+TARGET_FILE="$HOME/Projects/dotfiles/.config/Code/User/settings.json"
+
+# Ensure the target directory exists
+TARGET_DIR=$(dirname "$TARGET_FILE")
+mkdir -p "$TARGET_DIR"
+
+echo "Syncing $SOURCE_FILE to $TARGET_FILE..."
+
+# Sync the file
+rsync -av "$SOURCE_FILE" "$TARGET_FILE"
 
 echo "Config sync completed."

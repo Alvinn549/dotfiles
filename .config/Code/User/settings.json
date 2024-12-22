@@ -23,6 +23,7 @@
     /** ------------ Editor Settings ------------ **/
     "editor.fontFamily": "JetBrainsMono Nerd Font, FiraCode Nerd Font, Monospace",
     "editor.fontSize": 13.5,
+    "editor.fontLigatures": true,
     "editor.suggestFontSize": 14,
     "editor.suggestLineHeight": 14,
     "editor.formatOnSave": true,
@@ -38,6 +39,7 @@
     "editor.cursorBlinking": "smooth",
     "editor.stickyScroll.enabled": false,
     "editor.padding.top": 15,
+    "editor.linkedEditing": true,
     /** ------------ Files Settings ------------ **/
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
@@ -46,6 +48,7 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
+    "git.ignoreRebaseWarning": true,
     /** ------------ Window Settings ------------ **/
     "window.titleBarStyle": "native",
     "window.menuBarVisibility": "toggle",
@@ -103,11 +106,9 @@
         "**/composer.lock": true,
         "**/package-lock.json": true
     },
-    "files.watcherExclude": {
-        "**/vendor/**": true,
-        "**/node_modules/**": true,
-        "**/storage/**": true
-    },
-    "editor.linkedEditing": true,
-    "git.ignoreRebaseWarning": true,
+    // "files.watcherExclude": {
+    //     "**/vendor/**": true,
+    //     "**/node_modules/**": true,
+    //     "**/storage/**": true
+    // }
 }

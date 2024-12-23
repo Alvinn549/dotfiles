@@ -58,11 +58,11 @@
                 },
                 {
                     "label": "",
-                    "command": "thunar"
+                    "command": "nautilus"
                 },
                 {
                     "label": "",
-                    "command": "kitty btop"
+                    "command": "alacritty btop"
                 },
                 {
                     "label": "",
@@ -74,11 +74,11 @@
                 },
                 {
                     "label": "",
-                    "command": "firefox https://github.com"
+                    "command": "google-chrome https://github.com"
                 },
                 {
                     "label": "",
-                    "command": "firefox https://meet.google.com/"
+                    "command": "google-chrome https://meet.google.com/"
                 }
             ]
         }

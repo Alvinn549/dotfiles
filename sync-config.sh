@@ -40,4 +40,7 @@ echo "Syncing $SOURCE_FILE to $TARGET_FILE..."
 # Sync the file
 rsync -av "$SOURCE_FILE" "$TARGET_FILE"
 
+# Sync ~/.zshrc to Projects/dotfiles/.zshrc
+cp ~/.zshrc /home/alvin/Projects/dotfiles/.zshrc
+
 echo "Config sync completed."

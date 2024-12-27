@@ -11,10 +11,20 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting fzf)
 source $ZSH/oh-my-zsh.sh
 
 alias reload='source ~/.zshrc'
+
 alias ls='ls --color=auto'
+alias tr="tree"
+
 alias cat='batcat'
 alias grep='grep --color=auto'
+
 alias ..='cd ..'
 alias ...='cd ../..'
+
+alias update='sudo apt update'
+alias upgrade='sudo apt upgrade'
+alias uplist='apt list --upgradable'
+alias remove='sudo apt autoremove'
+alias autoclean='sudo apt autoclean'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

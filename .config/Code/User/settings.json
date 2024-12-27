@@ -106,6 +106,7 @@
         "**/composer.lock": true,
         "**/package-lock.json": true
     },
+    "security.workspace.trust.untrustedFiles": "open",
     // "files.watcherExclude": {
     //     "**/vendor/**": true,
     //     "**/node_modules/**": true,

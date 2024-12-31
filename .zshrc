@@ -26,5 +26,6 @@ alias upgrade='sudo apt upgrade'
 alias uplist='apt list --upgradable'
 alias remove='sudo apt autoremove'
 alias autoclean='sudo apt autoclean'
+alias aptsearch='sudo apt search'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

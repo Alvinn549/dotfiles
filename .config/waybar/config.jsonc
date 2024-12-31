@@ -8,6 +8,7 @@
         "clock",
         "cpu",
         "memory",
+        // "mpd",
         "sway/workspaces",
         "sway/window"
     ],
@@ -65,7 +66,8 @@
             "playing": ""
         },
         "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
+        "tooltip-format-disconnected": "MPD (disconnected)",
+        "on-click": "ario"
     },
     "tray": {
         "icon-size": 13,
@@ -151,13 +153,14 @@
         ]
     },
     "network": {
-        "interval": 1,
+        // "interval": 1,
         "format-wifi": "  {essid} ({signalStrength}%)",
         "format-ethernet": "  {ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}  {bandwidthDownBytes}  {bandwidthUpBytes}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        // "format-alt": "{ifname}: {ipaddr}/{cidr}  {bandwidthDownBytes}  {bandwidthUpBytes}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

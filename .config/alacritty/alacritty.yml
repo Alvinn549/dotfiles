@@ -12,8 +12,8 @@ env:
 window:
   opacity: 0.85
   padding:
-    x: 10
-    y: 10
+    x: 15
+    y: 15
 
   decorations: full
   startup_mode: Windowed

@@ -60,11 +60,12 @@ window#waybar {
 #mpd,
 #custom-swaync,
 #custom-power {
+
     background: #1e1e2e;
     color: #ff5555;
     padding: 0 10px;
     margin: 3px 0px;
-    margin-right: 7px;
+    margin-right: 5px;
     border-radius: 5px;
 }
 
@@ -83,18 +84,9 @@ window#waybar {
     margin-right: 7px;
 }
 
-/* .modules-left>widget:first-child>#workspaces {
-    margin-left: 0;
-}
-
-.modules-right>widget:last-child>#workspaces {
-    margin-right: 10px;
-} */
-
 #clock {
     background-color: #1e1e2e;
-    color: #ff79c6;
-    margin-left: 10px;
+    color: #ffffff;
 }
 
 #battery {
@@ -140,6 +132,7 @@ label:focus {
 }
 
 #cpu {
+    margin-left: 5px;
     background-color: #1e1e2e;
     color: #ffb86c;
 }

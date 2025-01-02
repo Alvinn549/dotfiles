@@ -5,10 +5,8 @@
     "margin-left": 1,
     "margin-right": 1,
     "modules-left": [
-        "clock",
         "cpu",
         "memory",
-        // "mpd",
         "sway/workspaces",
         "sway/window"
     ],
@@ -20,6 +18,7 @@
         "backlight",
         "battery",
         "tray",
+        "clock",
         "custom/swaync",
         "custom/power"
     ],
@@ -74,7 +73,6 @@
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
         "tooltip-format": "\n<big>  {:%d %B %Y }</big>\n\n<tt><big>{calendar}</big></tt>",
         "format-alt": "{:%d-%m-%Y / %H:%M:%S}",
         "interval": 1
@@ -217,7 +215,7 @@
         "escape": true
     },
     "custom/power": {
-        "format": "󰍃 ",
+        "format": "󰍃",
         "tooltip": false,
         "on-click": "wlogout --protocol layer-shell -b 4"
     }

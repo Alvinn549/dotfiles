@@ -26,6 +26,8 @@ Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window 
 - **GTK and QT Themeing**:
   - **nwg-look**: GTK theme customization.
   - **qt5ct**: QT application theme customization.
+- **Swaylock**: Screen locker with customization support.
+- **Swaylock-effects**: Enhanced effects for `swaylock`, including blur, pixelation, and more.
 
 ## Requirements
 
@@ -38,6 +40,8 @@ Ensure you have the following tools installed:
 - [Wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [nwg-look](https://github.com/nwg-piotr/nwg-look)
 - [qt5ct](https://wiki.archlinux.org/title/Qt5ct)
+- [Swaylock](https://github.com/swaywm/swaylock)
+- [Swaylock-effects](https://github.com/mortie/swaylock-effects)
 
 ## Configuration Details
 
@@ -45,6 +49,8 @@ Ensure you have the following tools installed:
 - **Waybar**: Modules for system information (battery, network, CPU, etc.) and workspace display.
 - **Wofi**: A clean, minimal configuration for application launching.
 - **Wlogout**: Styled logout menu with options for shutdown, restart, and lock.
+- **Swaylock**: Configured to provide a secure and visually appealing screen locker.
+- **Swaylock-effects**: Applied effects such as blur and pixelation for an enhanced lock screen experience.
 - **Themes**:
   - GTK: Configured using `nwg-look`.
   - QT: Styled using `qt5ct`.

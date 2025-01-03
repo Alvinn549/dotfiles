@@ -17,7 +17,6 @@ This repository contains configuration files (dotfiles) for the Sway window mana
 Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window manager. This repository includes customizations and configurations for various tools to enhance the user experience.
 
 ## Features
-
 - **Sway**: Lightweight and highly configurable tiling window manager.
 - **SwayNC**: Notification center for Wayland.
 - **Wofi**: Application launcher.
@@ -26,8 +25,11 @@ Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window 
 - **GTK and QT Themeing**:
   - **nwg-look**: GTK theme customization.
   - **qt5ct**: QT application theme customization.
+- **SwayIdle**: Idle management daemon for Wayland.
 - **Swaylock**: Screen locker with customization support.
 - **Swaylock-effects**: Enhanced effects for `swaylock`, including blur, pixelation, and more.
+- **swaybg**: Wallpaper utility for Sway.
+- **sway-notification-center**: Notification center for Sway.
 
 ## Requirements
 
@@ -40,8 +42,11 @@ Ensure you have the following tools installed:
 - [Wlogout](https://github.com/ArtsyMacaw/wlogout)
 - [nwg-look](https://github.com/nwg-piotr/nwg-look)
 - [qt5ct](https://wiki.archlinux.org/title/Qt5ct)
+- [SwayIdle](https://github.com/swaywm/swayidle)
 - [Swaylock](https://github.com/swaywm/swaylock)
 - [Swaylock-effects](https://github.com/mortie/swaylock-effects)
+- [swaybg](https://github.com/swaywm/swaybg)
+- [sway-notification-center](https://github.com/ErikReider/SwayNotificationCenter)
 
 ## Configuration Details
 
@@ -51,6 +56,8 @@ Ensure you have the following tools installed:
 - **Wlogout**: Styled logout menu with options for shutdown, restart, and lock.
 - **Swaylock**: Configured to provide a secure and visually appealing screen locker.
 - **Swaylock-effects**: Applied effects such as blur and pixelation for an enhanced lock screen experience.
+- **swaybg**: Configured to set a custom wallpaper for the Sway desktop.
+- **sway-notification-center**: Configured to display notifications in a centralized manner.
 - **Themes**:
   - GTK: Configured using `nwg-look`.
   - QT: Styled using `qt5ct`.

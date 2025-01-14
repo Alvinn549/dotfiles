@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
-EMOJI="$(sed '1,/^### DATA ###$/d' $0 | wofi -p "emoji" --show dmenu -i | cut -d ' ' -f 1 | tr -d '\n')"
+EMOJI="$(sed '1,/^### DATA ###$/d' $0 | wofi -p "emoji : " --show dmenu -i | cut -d ' ' -f 1 | tr -d '\n')"
+
 wtype "$EMOJI"; wl-copy "$EMOJI"
+
 exit
+
 ### DATA ###
 😀 grinning face face smile happy joy :D grin smiley
 😃 grinning face with big eyes face happy joy haha :D :) smile funny mouth open smiley smiling

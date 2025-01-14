@@ -12,7 +12,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git aliases zsh-autosuggestions zsh-syntax-highlighting fzf)
+plugins=(git aliases zsh-autosuggestions zsh-syntax-highlighting fzf laravel)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,21 +20,35 @@ alias reload='source ~/.zshrc'
 
 alias c='clear'
 
-alias ls='eza -a --icons=always'
-alias ll='eza -al --icons=always'
-alias lt='eza -a --tree --level=1 --icons=always'
+if command -v eza >/dev/null 2>&1; then
+    alias ls='eza -ag --icons=always'
+    alias ll='eza -agl --icons=always'
+    alias lh='eza -aglh --icons=always'
+    alias lt='eza -a --tree --level=1 --icons=always'
+else
+    alias ls='ls --color=auto'
+    alias ll='ls -la'
+    alias lh='ls -lah'
+    alias lt='tree -L 1'
+fi
 
-alias cat='batcat'
 alias grep='grep --color=auto'
 
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ~='cd ~'
 
 alias update='sudo apt update'
 alias upgrade='sudo apt upgrade'
 alias uplist='apt list --upgradable'
-alias remove='sudo apt autoremove'
+alias autoremove='sudo apt autoremove'
 alias autoclean='sudo apt autoclean'
 alias aptsearch='sudo apt search'
+
+php_switcher_path="$HOME/Projects/php-switcher"
+
+if [[ -f $php_switcher_path/php-switcher.sh ]]; then
+    alias php-switcher="sudo $php_switcher_path/php-switcher.sh"
+fi
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

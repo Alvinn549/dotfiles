@@ -29,7 +29,6 @@ Sway is a tiling Wayland compositor and a drop-in replacement for the i3 window 
 - **Swaylock**: Screen locker with customization support.
 - **Swaylock-effects**: Enhanced effects for `swaylock`, including blur, pixelation, and more.
 - **swaybg**: Wallpaper utility for Sway.
-- **sway-notification-center**: Notification center for Sway.
 
 ## Requirements
 
@@ -46,7 +45,6 @@ Ensure you have the following tools installed:
 - [Swaylock](https://github.com/swaywm/swaylock)
 - [Swaylock-effects](https://github.com/mortie/swaylock-effects)
 - [swaybg](https://github.com/swaywm/swaybg)
-- [sway-notification-center](https://github.com/ErikReider/SwayNotificationCenter)
 
 ## Configuration Details
 
